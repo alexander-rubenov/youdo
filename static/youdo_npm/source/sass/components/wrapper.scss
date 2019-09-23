@@ -1,0 +1,16 @@
+.wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  &--full-height {
+    display: flex;
+    height: calc(100vh - 76px);
+    max-height: 600px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    max-width: 1320px;
+  }
+}

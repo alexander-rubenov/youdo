@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <title>Flatplan & YouDo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="preload" href="static/youdo/fonts/formular-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="static/youdo/fonts/formular-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="static/youdo/css/style.min.css">
+</head>
+<header class="header">
+  <div class="wrapper header__wrapper">
+    <a href="#" title="Логотип Flatplan">
+      <svg width="50" height="50" aria-hidden="true">
+        <use xlink:href="#flatplan-logo"></use>
+      </svg>
+    </a>
+
+    <nav class="header__nav" role="navigation">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a class="header__link header__nav-link" href="features" data-scroll-link>
+            Наши преимущества
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__link header__nav-link" href="offers" data-scroll-link>
+            Примеры услуг
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__link header__nav-link" href="why-flatplan" data-scroll-link>
+            Почему Flatplan
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__link header__nav-link" href="faq" data-scroll-link>
+            Частые вопросы
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <a href="tel:84950325651" class="header__link header__phone">+7 (495) 032-56-51</a>
+
+    <a href="#" title="Логотип Flatplan">
+      <svg width="81" height="27" aria-hidden="true">
+        <use xlink:href="#youdo-logo"></use>
+      </svg>
+    </a>
+  </div>
+</header>
+
+<main role="main">
+  <section class="introduction">
+    <div class="wrapper introduction__wrapper">
+      <h1 class="title title--h1 title--white introduction__title">
+        Упрощаем ремонт
+      </h1>
+      <p class="subtitle introduction__description">
+        Спроектируем, спланируем и проконтролируем ремонт вашей квартиры
+      </p>
+      <a href="offers" class="btn btn--yellow" data-scroll-link>
+        Посмотреть услуги
+      </a>
+    </div>
+  </section>
+
+  <section class="section features" id="features">
+    <div class="wrapper features__wrapper">
+      <h2 class="title title--h2 title--center">
+        Наши преимущества
+      </h2>
+      <p class="subtitle subtitle--grey features__subtitle">
+        Мы собрали всех необходимых экспертов для ремонта и зафиксировали стоимость услуг
+      </p>
+
+      <ul class="features__list">
+        <li class="features__item">
+          <svg class="features__icon" width="40" height="40" aria-hidden="true">
+            <use xlink:href="#pricetag-icon"></use>
+          </svg>
+          <p>
+            Фиксированная стоимость проектирования интерьера
+          </p>
+        </li>
+
+        <li class="features__item">
+          <svg class="features__icon" width="40" height="40" aria-hidden="true">
+            <use xlink:href="#award-icon"></use>
+          </svg>
+          <p>
+            Отобранные надежные партнеры и производители
+          </p>
+        </li>
+
+        <li class="features__item">
+          <svg class="features__icon" width="40" height="40" aria-hidden="true">
+            <use xlink:href="#box-icon"></use>
+          </svg>
+          <p>
+            Любые виды услуг, связанных с ремонтом
+          </p>
+        </li>
+
+        <li class="features__item">
+          <svg class="features__icon" width="40" height="40" aria-hidden="true">
+            <use xlink:href="#certificated-icon"></use>
+          </svg>
+          <p>
+            Сертифицированные исполнители
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section offers" id="offers">
+    <div class="wrapper">
+      <h2 class="title title--h2 title--center">
+        Наши проекты
+      </h2>
+
+      <div class="offers__slider-container" id="offers-slider">
+        <ul class="offers__slider">
+          <li class="offers__slide">
+            <div class="offers__slide-preview" style="background-image: url('static/youdo/img/services/6.png')" data-modal-target="request-modal" data-modal-service="Дизайн-проект квартиры">
+              <div class="offers__slide-title">
+                <p>
+                  Дизайн-проект квартиры
+                </p>
+                <span class="price">
+              29 900₽
+            </span>
+              </div>
+            </div>
+            <div class="offers__slide-description">
+              <p>
+                Весь комплект чертежей и 2 списка материалов и мебели с ценами и артикулами на разный бюджет
+              </p>
+            </div>
+          </li>
+
+          <li class="offers__slide">
+            <div class="offers__slide-preview" style="background-image: url('static/youdo/img/services/2.png')" data-modal-target="request-modal" data-modal-service="Подробный проект кухни">
+              <div class="offers__slide-title">
+                <p>
+                  Подробный проект кухни
+                </p>
+                <span class="price">
+              2990₽
+            </span>
+              </div>
+            </div>
+            <div class="offers__slide-description">
+              <p>
+                Декораторы сделают подробный индивидуальный проект кухни, после которого у вас не останется никаких вопросов и сомнений
+              </p>
+            </div>
+          </li>
+
+          <li class="offers__slide">
+            <div class="offers__slide-preview" style="background-image: url('static/youdo/img/services/5.png')" data-modal-target="request-modal" data-modal-service="Закупка черновых материалов у партнеров">
+              <div class="offers__slide-title">
+                <p>
+                  Закупка черновых материалов у партнеров
+                </p>
+                <span class="price">
+              1990₽
+            </span>
+              </div>
+            </div>
+            <div class="offers__slide-description">
+              <p>
+                Эксперт составит подробный список черновых материалов, подготовит смету и согласует с вами бюджет
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <button class="btn btn--purple offers__btn" type="button" data-modal-target="request-modal" data-modal-service="Блок :: Наши проекты">
+        Создать задание
+      </button>
+
+    </div>
+  </section>
+
+  <section class="section get-started-now">
+    <div class="wrapper">
+      <h2 class="get-started-now__title title title--h2 title--center">
+        Начните работу прямо сейчас
+      </h2>
+
+      <ul class="get-started-now__content">
+        <li class="get-started-now__content-block get-started-now__manager-block">
+          <svg class="get-started-now__block-icon" width="90" height="90" aria-hidden="true">
+            <use xlink:href="#manager-icon"></use>
+          </svg>
+
+          <strong class="get-started-now__block-term">
+            Я — заказчик
+          </strong>
+          <p class="get-started-now__block-description">
+            Мне нужен проект,<br>чтобы все разъяснить мастерам
+          </p>
+
+          <button class="btn btn--yellow" type="button" data-modal-target="request-modal" data-modal-service="Блок :: Я - заказчик">
+            Подробнее
+          </button>
+        </li>
+        <li class="get-started-now__content-block get-started-now__manager-block">
+          <svg class="get-started-now__block-icon" width="90" height="90" aria-hidden="true">
+            <use xlink:href="#engineer-icon"></use>
+          </svg>
+
+          <strong class="get-started-now__block-term">
+            Я — мастер
+          </strong>
+          <p class="get-started-now__block-description">
+            Мне нужно быстрее начать работу <br>А у заказчика нет чертежей, только идеи
+          </p>
+
+          <button class="btn btn--yellow" type="button" data-modal-target="request-modal" data-modal-service="Блок :: Я - мастер">
+            Подробнее
+          </button>
+
+        </li>
+      </ul>
+
+    </div>
+  </section>
+
+  <section class="section why-flatplan" id="why-flatplan">
+    <div class="wrapper">
+      <h2 class="title title--h2 title--center">
+        Почему Flatplan?
+      </h2>
+
+      <p class="subtitle subtitle--center subtitle--grey">
+        Flatplan берет на себя все задачи по проектированию интерьера и контролю вашего ремонта.
+        Мы оставим вам те заботы, которые вам нравится, а остальное возьмем на себя
+      </p>
+
+      <ul class="why-flatplan__list">
+        <li class="why-flatplan__item">
+          <div class="why-flatplan__item-preview">
+            <img class="why-flatplan__item-img" src="static/youdo/img/interior-project.png" alt="Проект интерьера" width="290" height="171">
+          </div>
+          <div class="why-flatplan__item-description">
+            <h3 class="title title--h3">
+              Проектируем интерьер
+            </h3>
+            <p>
+              Выберите любой интерьер из наших концепций. Мы сделаем для вас индивидуальный проект для вашей квартиры в стиле, который вам понравился
+            </p>
+            <button class="btn btn--purple" type="button" data-modal-target="request-modal" data-modal-service="Блок :: Проектируем интерьер">
+              Выбрать интерьер
+            </button>
+          </div>
+        </li>
+
+        <li class="why-flatplan__item">
+          <div class="why-flatplan__item-preview">
+            <img class="why-flatplan__item-img" src="static/youdo/img/delivery.png" alt="Проект интерьера" width="290" height="171">
+          </div>
+          <div class="why-flatplan__item-description">
+            <h3 class="title title--h3">
+              Доставляем материалы
+              и все необходимое
+            </h3>
+            <p>
+              Мы работаем с федеральными брендами, которые дают нам скидки. Этими скидками мы делимся с вами. Поэтому у нас дешевле
+            </p>
+            <button class="btn btn--purple" type="button" data-modal-target="request-modal" data-modal-service="Блок :: Доставляем материалы">
+              Разместить заказ
+            </button>
+          </div>
+        </li>
+
+        <li class="why-flatplan__item">
+          <div class="why-flatplan__item-preview">
+            <img class="why-flatplan__item-img" src="static/youdo/img/validation.png" alt="Проект интерьера" width="290" height="171">
+          </div>
+          <div class="why-flatplan__item-description">
+            <h3 class="title title--h3">
+              Проверенные мастера
+            </h3>
+            <p>
+              Наш сервис предлагает более 90 услуг, которые вам могут понадобится во время ремонта. В качестве исполнителей мы отобрали лучших мастеров YouDo. Вы сможете найти их по специальному значку
+            </p>
+            <button class="btn btn--purple" type="button" data-modal-target="request-modal" data-modal-service="Блок :: Проверенные мастера">
+              Создать задание
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section faq" id="faq">
+    <div class="wrapper faq__wrapper">
+      <h2 class="title title--center title--h2 title--white">
+        Частые вопросы
+      </h2>
+
+      <ul class="faq__questions">
+        <li class="faq__question" tabindex="0">
+          <p class="faq__question-text">
+            Как построен процесс работы?
+
+            <span class="icon">
+              +
+            </span>
+          </p>
+          <p class="faq__question-answer">
+              Вы выбираете интерьер, который вам нравится и наши дизайнеры после проведения замеров готовят для вас
+              дизайн-проект за 7 дней. Мы также подготовим 2 списка со всеми материалами, сантехникой и мебелью
+              и предложим услуги доставки всего необходимого для ремонта в вашу будущую квартиру. Если вам нужна
+              строительная бригада, мы подбираем для вас несколько вариантов из сертифицированных исполнителей YouDo.
+              Вся подготовительная работа с нашей стороны не займет более 2 недель, а затем в процессе ремонта
+              мы всегда будем готовы проконсультировать вас по всем вопросам или в любой момент взять задачи
+              по ремонту на себя
+          </p>
+        </li>
+        <li class="faq__question" tabindex="0">
+          <p class="faq__question-text">
+            У меня необычная квартира. Интерьеры, которые вы предлагаете, подходят для уникальных планировок?
+
+            <span class="icon">
+              +
+            </span>
+          </p>
+          <p class="faq__question-answer">
+            Мы сделаем проект для любой уникальной планировки и учтем особенности вашей квартиры
+          </p>
+        </li>
+
+       <li class="faq__question" tabindex="0">
+          <p class="faq__question-text">
+            Мне не нужен весь комплект чертежей, только электрика и расстановка мебели. Можете сделать?
+
+            <span class="icon">
+              +
+            </span>
+          </p>
+          <p class="faq__question-answer">
+            Да, мы можем сделать для вас только те чертежи, которые вам необходимы
+          </p>
+        </li>
+
+        <li class="faq__question" tabindex="0">
+          <p class="faq__question-text">
+            Почему у вас ниже цены на материалы и мебель?
+
+            <span class="icon">
+              +
+            </span>
+          </p>
+          <p class="faq__question-answer">
+              Мы являемся агрегатором товаров, указанных в вашем проекте. Наши цены ниже розничных, потому что мы
+              предоставляем вам «дизайнерские» скидки, которые нам предлагают бренды. У нас также есть особые
+              договоры с фабриками. Например, Кухни Flatplan by Мария до 40% дешевле за счет собственного бренда
+              и прямой поставки с производства. В каждой коллаборации мы добиваемся лучших условий. Если найдете
+              более бюджетный вариант – снижаем стоимость до этого уровня
+          </p>
+        </li>
+
+        <li class="faq__question" tabindex="0">
+          <p class="faq__question-text">
+            Можно ли заказать у вас материалы по моему дизайн-проекту?
+
+            <span class="icon">
+              +
+            </span>
+          </p>
+          <p class="faq__question-answer">
+            Да, вы можете отправить нам ваш дизайн-проект, и мы сообщим вам какие товары вам будет выгодно заказать через нас
+          </p>
+        </li>
+
+        <li class="faq__question" tabindex="0">
+          <p class="faq__question-text">
+            Как вы отбираете исполнителей?
+
+            <span class="icon">
+              +
+            </span>
+          </p>
+          <p class="faq__question-answer">
+            Все исполнители, которые прошли сертифицирование, кроме проверки знаний прошли дополнительное
+              16-часовое обучение. Кроме того, у всех исполнителей хорошие показатели по количеству выполненных
+              работ и высокий рейтинг на YouDo
+          </p>
+        </li>
+
+        <li class="faq__question" tabindex="0">
+          <p class="faq__question-text">
+            Я уже в процессе ремонта и у меня уже есть строительная бригада. Что из ваших услуг мне может быть полезно?
+
+            <span class="icon">
+              +
+            </span>
+          </p>
+          <p class="faq__question-answer">
+            Мы всегда готовы проконтролировать первичный этап ремонтных работ, организовать технический надзор,
+              проверить смету ваших рабочих, при необходимости найти узко-профильного специалиста, а также
+              предоставляем околоремонтные услуги, связанные с переездами и уборками после ремонта
+          </p>
+        </li>
+
+        <li class="faq__question" tabindex="0">
+          <p class="faq__question-text">
+            Я хочу, чтобы ремонт проходил полностью без моего участия. Так можно?
+
+            <span class="icon">
+              +
+            </span>
+          </p>
+          <p class="faq__question-answer">
+            Мы готовы взять на себя организацию всего процесса. От проектирования интерьера, планирования ремонта,
+              найма бригады и контроля работ до завершающей уборки в вашей готовой квартире
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="wrapper footer__wrapper">
+
+    <div class="footer__top-block">
+      <a href="#" title="Логотип Flatplan" class="footer__logo">
+          <svg width="50" height="50" aria-hidden="true">
+          <use xlink:href="#flatplan-logo"></use>
+          </svg>
+      </a>
+      <a href="#" class="footer__logo">
+        <svg width="46" height="41">
+          <use xlink:href="#youdo-short-logo"></use>
+        </svg>
+      </a>
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a class="footer__link footer__nav-link" href="features" data-scroll-link>
+              Наши преимущества
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__link footer__nav-link" href="offers" data-scroll-link>
+              Примеры услуг
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__link footer__nav-link" href="why-flatplan" data-scroll-link>
+              Почему Flatplan
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__link footer__nav-link" href="faq" data-scroll-link>
+              Частые вопросы
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer__copyright">
+      <p>
+        © 2012–2019 YouDo
+      </p>
+    </div>
+  </div>
+</footer>
+<script>
+  dataLayer = [];
+</script>
+<script src="static/youdo/js/utils.min.js"></script>
+<script src="static/youdo/js/main.min.js"></script>
+</body>
+</html>

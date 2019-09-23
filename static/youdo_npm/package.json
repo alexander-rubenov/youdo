@@ -1,0 +1,59 @@
+{
+  "name": "flatplan",
+  "version": "13.0.0",
+  "private": true,
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "autoprefixer": "^9.2.1",
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-flatten": "^0.4.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-strip-comments": "^2.5.2",
+    "gulp-stylelint": "^8.0.0",
+    "gulp-svgstore": "^7.0.0",
+    "gulp-typograf": "^3.1.0",
+    "gulp-uglify": "^3.0.1",
+    "gulp-uglify-es": "^1.0.4",
+    "gulp-watch": "^5.0.1",
+    "gulp-webp": "^3.0.0",
+    "imagemin-pngquant": "^6.0.0",
+    "postcss-sorting": "^4.0.1",
+    "rimraf": "^2.6.2",
+    "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp build && gulp serve",
+    "lighthouse-test": "lighthouse http://127.0.0.1:8000/ --view"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js"
+  ],
+  "engines": {
+    "node": "8.9"
+  },
+  "dependencies": {
+    "natives": "^1.1.6"
+  }
+}

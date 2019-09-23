@@ -1,0 +1,53 @@
+.title {
+  width: fit-content;
+
+  font-weight: bold;
+  line-height: $text-line-height;
+  color: $primary-black;
+
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--h1 {
+    font-size: 24px;
+  }
+
+  &--h2 {
+    font-size: 18px;
+  }
+
+  &--h3 {
+    font-size: 24px;
+  }
+
+
+  &--white {
+    color: #ffffff;
+  }
+
+  &--underline {
+    display: inline;
+    border-bottom: 1px solid $purple;
+  }
+
+  &--center {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    &--h1 {
+      font-size: 48px;
+    }
+
+    &--h2 {
+      font-size: 48px;
+    }
+
+    &--h3 {
+      font-size: 32px;
+    }
+  }
+}

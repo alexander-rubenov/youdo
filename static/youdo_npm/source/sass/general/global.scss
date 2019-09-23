@@ -1,0 +1,87 @@
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  height: 100%;
+
+  background-color: #FAFAFA;
+
+  font-family: "Formular Regular", "Arial", sans-serif;
+  font-size: $paragraph-font-size;
+  -webkit-font-smoothing: antialiased;
+  color: $primary-black;
+
+  &.fixed {
+    overflow: hidden;
+  }
+}
+
+* {
+  box-sizing: border-box;
+
+  &[data-view="mobile"] {
+    display: block !important;
+  }
+
+  &[data-view="desktop"] {
+    display: none !important;
+  }
+}
+
+img, video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+svg {
+  vertical-align: middle;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+a {
+  display: block;
+
+  text-decoration: none;
+  color: #000000;
+
+  transition: all 0.25s;
+}
+
+
+a, button, svg {
+  transition: $basic-transition;
+}
+
+@media (min-width: 950px) {
+  * {
+    &[data-view="mobile"] {
+      display: none !important;
+    }
+
+    &[data-view="desktop"] {
+      display: flex !important;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  body {
+    font-size: $desktop-paragraph-font-size;
+  }
+}

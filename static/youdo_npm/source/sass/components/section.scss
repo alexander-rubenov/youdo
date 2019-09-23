@@ -1,0 +1,9 @@
+.section {
+  margin-top: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .section {
+    margin-top: 75px;
+  }
+}

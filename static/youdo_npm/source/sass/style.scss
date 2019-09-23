@@ -1,0 +1,31 @@
+// general styles
+@import "general/variables";
+@import "general/normalize";
+@import "general/visually-hidden";
+@import "general/fonts";
+@import "general/global";
+
+// libs
+
+// classes
+@import "classes/classes";
+
+// components
+@import "components/wrapper";
+@import "components/btn";
+@import "components/titles";
+@import "components/subtitle";
+@import "components/section";
+@import "components/paragraph";
+@import "components/grid";
+@import "components/modal";
+
+// blocks
+@import "blocks/header";
+@import "blocks/introduction";
+@import "blocks/features";
+@import "blocks/offers";
+@import "blocks/why-flatplan";
+@import "blocks/faq";
+@import "blocks/footer";
+@import "blocks/get-started-now";

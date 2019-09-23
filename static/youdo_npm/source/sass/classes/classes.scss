@@ -1,0 +1,12 @@
+.underline {
+  display: inline-block;
+  width: fit-content;
+
+  border-bottom: 1px solid #000000;
+
+  &--grey {
+    border-bottom: 1px solid $grey-color;
+
+    color: $grey-color;
+  }
+}

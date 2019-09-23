@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Formular Regular";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../fonts/formular-regular.woff2") format("woff2"),
+  url("../fonts/formular-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Formular Bold";
+  font-weight: bold;
+  font-style: normal;
+
+  src: url("../fonts/formular-bold.woff2") format("woff2"),
+  url("../fonts/formular-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Formular Black";
+  font-weight: bold;
+  font-style: normal;
+
+  src: url("../fonts/formular-black.woff2") format("woff2"),
+  url("../fonts/formular-black.woff") format("woff");
+}

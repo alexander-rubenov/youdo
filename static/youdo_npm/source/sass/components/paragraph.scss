@@ -1,0 +1,33 @@
+p {
+  line-height: $text-line-height;
+}
+
+.paragraph {
+  font-size: $paragraph-font-size;
+
+  &--description {
+    margin-top: 20px;
+  }
+
+  &--grey {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  & + & {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .paragraph {
+    font-size: 21px;
+
+    & + & {
+      margin-top: 40px;
+    }
+
+    &--description {
+      margin-top: 16px;
+    }
+  }
+}

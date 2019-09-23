@@ -1,0 +1,50 @@
+<div class="modal__bg" id="request-modal">
+  <div class="modal">
+    <button class="modal__close-button" type="button" data-modal-close="request-modal">
+      <span class="visually-hidden">
+        Закрыть модальное окно
+      </span>
+      <svg width="20" height="20" aria-hidden="true">
+        <use xlink:href="#cross-icon"></use>
+      </svg>
+    </button>
+
+    <div class="modal__wrapper">
+      <div class="modal__title-block">
+        <p class="modal__title">
+          Отправить заявку
+        </p>
+      </div>
+
+      <div class="modal__content">
+        <form class="modal__form" id="request-form">
+          <input type="hidden" name="csrfmiddlewaretoken" id="csrfToken" value="{{ csrf_token }}">
+          <input type="hidden" name="service" id="form-service" value="">
+          <label class="modal__label">
+            <input class="modal__input" type="text" id="form-name" name="name" placeholder="&nbsp;" required>
+            <span class="modal__label-text">Имя</span>
+          </label>
+
+          <label class="modal__label">
+            <input class="modal__input" type="tel" id="form-phone" name="tel" placeholder="&nbsp;" required>
+            <span class="modal__label-text">Телефон</span>
+          </label>
+
+          <label class="modal__label">
+            <input class="modal__input" type="email" id="form-email" name="email" placeholder="&nbsp;" required>
+            <span class="modal__label-text">Email</span>
+          </label>
+        </form>
+
+        <p class="modal__additional-message">
+          Нажимая кнопку «Отправить», я даю согласие на обработку персональных данных
+        </p>
+
+        <button class="btn btn--yellow modal__submit" type="submit" form="request-form">
+          Отправить
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+.subtitle {
+  margin-top: 10px;
+
+  &--grey {
+    color: $grey-color;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .subtitle {
+    margin-top: 20px;
+
+    font-size: 20px;
+  }
+}
